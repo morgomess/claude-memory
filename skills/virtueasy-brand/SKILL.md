@@ -1,13 +1,13 @@
 ---
 name: virtueasy-brand
-description: Applies Virtueasy's brand guidelines, voice, content rules, and product details to any output. Use this skill whenever writing anything for Virtueasy — captions, emails, product copy, hooks, blog posts, VA content, MailerLite sequences, social posts, or any asset associated with the Virtueasy brand or its products. Trigger on: "Virtueasy," "VA content," "virtual assistant caption," "email for the funnel," "VA Blueprint," "30-Day VA System," or any task producing content for the Virtueasy audience.
+description: Applies Virtueasy's brand guidelines, voice, content rules, and product details to any output. Use this skill whenever writing anything for Virtueasy — captions, emails, product copy, hooks, blog posts, VA content, MailerLite sequences, social posts, or any asset associated with the Virtueasy brand or its products. Trigger on: "Virtueasy," "VA content," "virtual assistant caption," "email for the funnel," "VA Starter Kit," "Pricing Tool," "Job Board," or any task producing content for the Virtueasy audience.
 ---
 
 # Virtueasy Brand
 
 ## Identity
 
-Virtueasy is a **faceless brand** and platform for virtual assistants who want to work smarter, earn more, and build a sustainable freelance business. It is a resource hub and education platform — not just a single product page.
+Virtueasy is a **faceless brand** and platform for virtual assistants who want to work smarter, earn more, and build a sustainable freelance business. It is a resource hub and education platform.
 
 **Morgan's name never appears in Virtueasy content.** Sign off as "Virtueasy" or leave unsigned. No exceptions.
 
@@ -39,8 +39,7 @@ Virtueasy is a **faceless brand** and platform for virtual assistants who want t
 
 - **No em dashes** — use a comma, period, or restructure.
 - **Morgan's name never appears** in any Virtueasy content, emails, or copy.
-- **Never use "roadmap," "plan," or "blueprint"** as generic format descriptors. The product is called the 30-Day VA System — "blueprint" is only used when referencing that specific product by name (VA Blueprint is an acceptable short form).
-- **"System" is the preferred framing word** for products and processes.
+- **No hype or "guru" framing.** No "change your life," no income guarantees, no MLM-adjacent promises.
 - Sign off as **"Virtueasy"** or leave unsigned. Never sign as Morgan.
 
 ---
@@ -63,44 +62,33 @@ Virtueasy is a **faceless brand** and platform for virtual assistants who want t
 
 ## Products and Infrastructure
 
-### 30-Day VA System (flagship product)
-- **Also called:** VA Blueprint (acceptable short form)
-- **Tagline:** 30 Days to Your First High-Ticket Client
-- **Format:** 30-day interactive HTML workbook
-- **Hosted at:** blueprint.virtueasy.com
-- **Access code:** BLUEPRINT2026
-- **Price:** $43 retail
-- **Discount code:** PREVIEW30 (brings to ~$13 via preview module)
-- **Stripe:** buy.stripe.com/6oU3cxeav7xyaft8iE63K05
-- **Features:** localStorage auto-save, journal prompts, AI generation on Day 11 via Vercel proxy, per-day note downloads, progress bar, home screen dashboard
+### VA Starter Kit (the only product)
+- **Price:** $27
+- **Contents:** 6 modules, lifetime access
+- **Free trial:** Days 1 and 2, at virtueasy.com/starterkit
+- **Includes:** free AI tools
 
-### Preview Module
-- **URL:** virtueasyproducts-cmd.github.io/va-blueprint-preview
-- **Covers:** Days 10-12
-- **AI gen:** Day 11 (5-gen cap)
-- **Sticky banner** with PREVIEW30 code
+### Free Lead Magnets
+- **Job Board** — email opt-in
+- **VA Pricing Tool** — free at 3 uses/day, or $7 lifetime for unlimited
+- **Blog**
 
-### Vercel Proxy (AI generation)
-- **URL:** workbook-theta.vercel.app/api/generate
-- **Model:** Claude Sonnet 4 (edge function)
-- **Repo:** virtueasyproducts-cmd/workbook
+### Retired (never reference as current)
+- 30-Day VA System / VA Blueprint — RETIRED. Do not mention, link, or cite.
+- Access code BLUEPRINT2026, discount code PREVIEW30 — DEAD. Never use.
+- blueprint.virtueasy.com — do not link.
 
-### MailerLite
-- **Sender:** hello@virtueasy.com
-- Strong open rates; click-through drops after Email 1
-- Emails 3-7 updated with preview module links and PREVIEW30 code
-- Form snippet: `data-form="XGmyJK"`
-
-### Free Resource
-- 260 ChatGPT Prompts for VAs at virtueasy.com/260-prompts-download
+### Needs confirmation (do not state until Morgan confirms)
+- Starter Kit Stripe / checkout URL
+- Whether the "260 ChatGPT Prompts" resource is still live
+- Current MailerLite nurture sequence structure (the old emails 3-7 / PREVIEW30 setup is dead)
+- Specifics of the "free AI tools" included with the Starter Kit
 
 ---
 
 ## Brand Positioning
 
-Virtueasy is a **platform brand** and VA resource hub. The 30-Day VA System is the first product in the ecosystem, not the only one. All messaging should reflect the broader platform vision while driving product sales.
-
-Do not position Virtueasy as just a Blueprint page or a single-product brand.
+Virtueasy is a **platform brand** and VA resource hub. The VA Starter Kit is the paid product; the Job Board, Pricing Tool, and Blog are free entry points into the ecosystem. Messaging should reflect the broader platform vision while driving Starter Kit sales.
 
 ---
 
@@ -123,5 +111,5 @@ Lowercase text-overlay style for short-form hooks. No em dashes anywhere.
 - Never include Morgan's name
 - Sign as "Virtueasy" or leave unsigned
 - Tone: direct, warm, practical
-- Include preview module link and PREVIEW30 code in emails 3-7
-- Goal: move subscribers from open to click to purchase
+- Sender: hello@virtueasy.com
+- Goal: move subscribers from open to click to purchase (Starter Kit)

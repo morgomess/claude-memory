@@ -10,6 +10,13 @@ Single source of truth for skill improvement opportunities across all of Morgan'
 
 ## Open (logged, not yet applied)
 
+### [2026-06-25] virtueasy-brand · STALE-INFO
+- **Observation:** Skill described the 30-Day VA System / VA Blueprint as the flagship product, but it is retired. Virtueasy's only product is now the VA Starter Kit ($27, 6 modules, lifetime).
+- **Evidence:** Skill listed blueprint.virtueasy.com, access code BLUEPRINT2026, discount PREVIEW30, $43 price, and "emails 3-7 with PREVIEW30" - all dead. Contradicted standing instructions.
+- **Proposed change:** Corrected version written to repo backup (skills/virtueasy-brand/SKILL.md): Starter Kit as sole product, lead magnets (Job Board, Pricing Tool, Blog), Blueprint refs moved to an explicit "Retired" block, naming-protection hard rule replaced with "no hype/guru framing." Flagged for confirmation: Starter Kit Stripe URL, 260-prompts status, current MailerLite sequence, AI-tools specifics.
+- **Action needed:** Morgan to update the LIVE skill via skill manager to match the repo backup (container mount is read-only, cannot push to live from here).
+- **Status:** logged
+
 <!-- New entries go here. Template:
 
 ### [YYYY-MM-DD] <target-skill or "NEW-SKILL"> · <TYPE>
