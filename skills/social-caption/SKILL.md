@@ -85,7 +85,7 @@ Low friction. Book a consult, learn more, link in bio.
 | Client | Voice | Notes |
 |---|---|---|
 | JVI | Authoritative, research-backed | Can lean into clinical trial involvement |
-| SVV | Warm, women's health aware | Dr. Baheti content: IR + women's health angle |
+| SVV | Warm but NOT sappy - direct over sentimental | Dr. Baheti content: IR + women's health angle. Review replies: warm, genuine, brief - no effusive/emotional language |
 | ECCO Medical | Educational, Colorado-proud | Spring/seasonal angles work well |
 | Brain Talk / Dr. Kelli | Thought leadership, accessible neuroscience | Write in Dr. Kelli's voice when specified |
 | Texas Vascular | Direct, PAD/vascular focused | Reel production briefs common |

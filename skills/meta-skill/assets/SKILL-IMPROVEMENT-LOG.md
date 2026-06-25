@@ -10,6 +10,18 @@ Single source of truth for skill improvement opportunities across all of Morgan'
 
 ## Open (logged, not yet applied)
 
+### [2026-06-25] social-caption · CORRECTION
+- **Observation:** SVV voice note said "warm, women's health aware" but a review reply Morgan flagged as too sappy showed the voice needs a non-sentimental guard.
+- **Evidence:** Rob Rossen FB review reply - first draft rejected as sappy; accepted version was warm, brief, direct.
+- **Proposed change:** SVV voice note updated (repo + live) to "warm but NOT sappy - direct over sentimental," with a review-reply guidance note.
+- **Status:** logged
+
+### [2026-06-25] healthcare-knowledge · GAP
+- **Observation:** HAE acronym was unknown when Morgan asked; PFE also absent. Both are TVI Q3 embolization focuses.
+- **Evidence:** TVI campaign calendar (Lisa Albert) - PFE July, GAE Aug, HAE Sept.
+- **Proposed change:** Added PFE (Plantar Fasciitis Embolization) and HAE (Hemorrhoid Artery Embolization) to the embolization knowledge (repo + live). GAE already present - deduped.
+- **Status:** logged
+
 ### [2026-06-25] NEW-SKILL · remotion-workflow
 - **Observation:** Across 5+ sessions Morgan re-hit the same Windows-specific Remotion + Claude Code obstacles (spawn EINVAL on skills add, skills-installer workaround, paste-one-command-at-a-time, wrong-directory npm install, transparent ProRes render command). No skill covered it, so each was rediscovered from scratch.
 - **Evidence:** Sessions: Remotion install walkthrough, messick-intro preview, ig-frame-animation, chat-bubbles render, Remotion project ideas.

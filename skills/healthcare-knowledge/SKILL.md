@@ -123,6 +123,10 @@ Vascular specialists (surgeons or physicians depending on the practice) treat di
 
 ---
 
+#### Specialty Embolization (TVI Q3 focus - GAE covered above under MSK)
+- **PFE (Plantar Fasciitis Embolization):** Targets chronic heel pain from plantar fasciitis when conservative care has failed.
+- **HAE (Hemorrhoid Artery Embolization):** Treats symptomatic hemorrhoids by embolizing the arteries supplying them. Minimally invasive alternative to surgery.
+
 ## Women's Health in Vascular / IR
 
 Several procedures are specifically relevant to women. When writing for SVV or other practices with a women's health angle:
