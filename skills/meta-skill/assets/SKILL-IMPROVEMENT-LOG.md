@@ -10,6 +10,13 @@ Single source of truth for skill improvement opportunities across all of Morgan'
 
 ## Open (logged, not yet applied)
 
+### [2026-06-25] NEW-SKILL · remotion-workflow
+- **Observation:** Across 5+ sessions Morgan re-hit the same Windows-specific Remotion + Claude Code obstacles (spawn EINVAL on skills add, skills-installer workaround, paste-one-command-at-a-time, wrong-directory npm install, transparent ProRes render command). No skill covered it, so each was rediscovered from scratch.
+- **Evidence:** Sessions: Remotion install walkthrough, messick-intro preview, ig-frame-animation, chat-bubbles render, Remotion project ideas.
+- **Proposed change:** New skill `remotion-workflow` created (repo + live mount this session). Captures gotchas, one-time setup, daily preview, render commands, conventions, licensing flag.
+- **Action needed:** Morgan to install via skill manager for cross-session persistence.
+- **Status:** logged
+
 ### [2026-06-25] virtueasy-brand · STALE-INFO
 - **Observation:** Skill described the 30-Day VA System / VA Blueprint as the flagship product, but it is retired. Virtueasy's only product is now the VA Starter Kit ($27, 6 modules, lifetime).
 - **Evidence:** Skill listed blueprint.virtueasy.com, access code BLUEPRINT2026, discount PREVIEW30, $43 price, and "emails 3-7 with PREVIEW30" - all dead. Contradicted standing instructions.
