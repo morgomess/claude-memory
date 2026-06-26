@@ -36,6 +36,36 @@ Single source of truth for skill improvement opportunities across all of Morgan'
 - **Action needed:** Morgan to update the LIVE skill via skill manager to match the repo backup (container mount is read-only, cannot push to live from here).
 - **Status:** logged
 
+### [2026-06-26] NEW-SKILL · cloudflare-worker-proxy · NEW-SKILL
+- **Observation:** The messick-marketing-ai-proxy worker is a shared dependency for 4+ apps (AIOS, Content App, YouTube App, Dashboard, Leads App). When AIOS changes were added, the /imagen route had aspectRatio hardcoded to '3:4' and max_tokens limits were too low. This required a full audit this session that could have been avoided with documented worker architecture.
+- **Evidence:** /imagen route ignored aspectRatio from body entirely — caused wrong-size images across all apps for multiple sessions. /claude route had no system prompt support. Both fixed this session.
+- **Proposed change:** New skill or reference doc capturing the worker's route map, what each app sends/expects, the Imagen aspectRatio values per content type (4:5 graphic, 9:16 reel/cover, 16:9 YouTube), and the rule: "always destructure aspectRatio from body with a sensible default — never hardcode."
+- **Status:** logged
+
+### [2026-06-26] github-powershell · GAP
+- **Observation:** Token expired/rate-limited on first attempt this session (api.github.com blocked in container). Skill already documents this correctly — but the session started with a wasted curl attempt anyway.
+- **Evidence:** First action was curl to api.github.com, which failed. Skill says to use git clone over HTTPS instead.
+- **Proposed change:** Add a bold "DO NOT try curl/api.github.com first" callout at the very top of the skill, above the workflow section.
+- **Status:** logged
+
+### [2026-06-26] NEW-SKILL · imagen-prompt-engineering · NEW-SKILL
+- **Observation:** Across multiple sessions and multiple apps, the same Imagen prompt mistakes keep recurring: hex codes rendered as visible text, font names rendered as visible text, structural labels like "Line 1" / "Header:" appearing in images, wrong aspect ratios. Each time this is debugged from scratch.
+- **Evidence:** This session: youtube app generated images with "#000D4D4", "Line 1", "Canva Sans Extra366" visible in the image. Root cause: image_prompt was embedded inside a JSON schema field description, causing Claude to blend design metadata into the prompt. Fix: always generate image prompts as plain text in a separate call, with explicit bans on hex codes, font names, and structural labels.
+- **Proposed change:** New skill `imagen-prompt-engineering` capturing: (1) always generate as plain text, never embedded in JSON; (2) banned terms list (hex codes, font names, structural labels, placeholder text); (3) color description rule (by name only: "deep teal" not "#008080"); (4) text overlay rules (max 4 words, quoted with placement); (5) quality footer template; (6) 2026 best practices (70/30 split, rim light sticker effect, teal-orange grading, safe-zone layout).
+- **Status:** logged
+
+### [2026-06-26] messick-brand · STALE-INFO
+- **Observation:** The YouTube app's Thumbnail Studio tab was still labeled "Reel Covers" — implying all thumbnails are 9:16 reels. Platform selectors had no 16:9 YouTube Thumbnail option. This reflects a gap in how the messick-brand or app-specific docs describe the thumbnail workflow.
+- **Evidence:** Screenshot showed "Reel Covers" tab, platform dropdown with only Instagram/Facebook/TikTok/YouTube Shorts — no 16:9 YouTube option. Fixed this session.
+- **Proposed change:** If a thumbnail workflow skill or app reference exists, update to clarify: YouTube thumbnails = 16:9 (1280x720), Shorts/Reels/Stories = 9:16 (1080x1920). Both formats should always be available.
+- **Status:** logged
+
+### [2026-06-26] NEW-SKILL · dashboard-feature-map · NEW-SKILL
+- **Observation:** The Messick Marketing dashboard (/dashboard) has grown significantly — Today Bar, Top 3 focus slots, drag-and-drop between both, column view, Empire game, slot reel picker, AI quick-add, KV sync, task drawer. No single reference captures what exists and how it connects, causing re-discovery each session.
+- **Evidence:** This session: added Today Bar → Top 3 drag, Top 3 click-to-open-drawer. Both were natural next features but required reading ~2500 lines of dashboard code each time to understand the existing patterns.
+- **Proposed change:** New reference doc (not necessarily a triggerable skill) capturing the dashboard's feature map: data model (localStorage keys, focus pins format, today order format), rendering pipeline (renderTodayDue → renderFocus → renderColumns), drag state variables (tdDragId, focusDragSlot, dragState), and event flow. Would make future dashboard sessions much faster.
+- **Status:** logged
+
 <!-- New entries go here. Template:
 
 ### [YYYY-MM-DD] <target-skill or "NEW-SKILL"> · <TYPE>
